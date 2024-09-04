@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background:url('../assets/images/Image15.png')no-repeat; /* You can replace this with your background image later */
+    color: #333;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    width: 100vw;
+    height: 100vh;
+    padding-top: 1005px; /* Add padding to prevent overlap on the top */
+}
+.container {
+    width: 80%;   /* Example width */
+    max-width: 1200px; /* Maximum width */
+    padding: 20px; /* Example padding */
+    background-color: #fff; /* Example background */
+    border-radius: 10px; /* Example rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+    margin-top: 200px; /* Add top margin to ensure it doesn't go into negative space */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2A5B01;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #3C7300;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    z-index: 1000;
+    background: rgba(40, 77, 14, 0.315);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    font-weight: 500;
+}
+
+.hero {
+    height: 100vh;
+    background: url('../assets/images/Homepage.png') no-repeat center center/cover;
+    display: flex;
+    opacity:97%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 70px;
+    letter-spacing: 20px;
+    font-weight: 200;
+    opacity: 100%;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: #FF8C00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #aa5e00;
+    transition: all 0.2s ease-in-out;
+}
+
+.logoimg{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
