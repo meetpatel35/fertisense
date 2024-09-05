@@ -5,9 +5,10 @@ import check from './assets/images/check.png'
 function Check() {
     const cropNames = ['Wheat', 'Rice', 'Maize (Corn)', 'Barley', 'Oats', 'Rye', 'Sorghum', 'Millet', 'Soybean', 'Peanut', 'Cotton', 'Sugarcane', 'Sugar beet', 'Potato', 'Sweet potato', 'Cassava', 'Yam', 'Tomato', 'Onion', 'Garlic', 'Cabbage', 'Cauliflower', 'Broccoli', 'Carrot', 'Spinach', 'Lettuce', 'Pepper', 'Cucumber', 'Pumpkin', 'Zucchini', 'Eggplant', 'Squash', 'Watermelon', 'Melon', 'Strawberry', 'Blueberry', 'Raspberry', 'Blackberry', 'Apple', 'Pear', 'Peach', 'Plum', 'Cherry', 'Apricot', 'Mango', 'Banana', 'Pineapple', 'Grape', 'Orange', 'Lemon', 'Lime', 'Grapefruit', 'Pomegranate', 'Kiwi', 'Avocado', 'Papaya', 'Date', 'Coconut', 'Almond', 'Walnut', 'Pistachio', 'Cashew', 'Pea', 'Lentil', 'Chickpea', 'Bean', 'Flax', 'Sesame', 'Sunflower', 'Rapeseed (Canola)', 'Olive', 'Tea', 'Coffee', 'Cocoa', 'Tobacco', 'Cotton', 'Hemp', 'Rubber', 'Jute', 'Sisal', 'Alfalfa', 'Clover', 'Timothy', 'Fescue', 'Ryegrass', 'Orchardgrass', 'Sudangrass', 'Switchgrass', 'Bamboo', 'Sugar maple', 'Rubber tree', 'Eucalyptus', 'Pine tree', 'Spruce', 'Fir', 'Cedar', 'Teak', 'Mahogany', 'Cork oak', 'Date palm'];
     return (
-        <>
-            <Navbar />
-            <div className="container">
+        <div className='check'>
+            {/* <Navbar /> */}
+            
+            <div className="container-check">
                 <div className="left">
                     <select className='search-bar' id="cars">
                         {cropNames.map((crop, index) => (
@@ -29,7 +30,8 @@ function Check() {
                     <img src={check} alt="Fertilizer Image" />
                 </div>
             </div>
-        </>
+            
+        </div>
     )
 }
 

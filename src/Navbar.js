@@ -1,7 +1,7 @@
 import React from 'react'
 import './Css/Home.css';
 import logo from './assets/images/logo.png'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -11,12 +11,12 @@ function Navbar() {
           <div className="logo">
           </div>
           <ul>
-            <img src={logo} alt="Fertisense Logo" className='logoimg'/>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/Library">Plant library</Link></li>
-            <li><Link to="/Check">Test Fertilizer</Link></li>
-            <li><Link to="/">Features</Link></li>
-            <li><Link to="/">Support</Link></li>
+            <img src={logo} alt="Fertisense Logo" className='logoimg' />
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/library">Plant library</NavLink></li>
+            <li><NavLink to="/check">Test Fertilizer</NavLink></li>
+            <li><NavLink to="/features">Features</NavLink></li>
+            <li><NavLink to="/Support">Support</NavLink></li>
           </ul>
         </nav>
       </header>

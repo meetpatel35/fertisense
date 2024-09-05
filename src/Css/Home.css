@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
+    font-family: "Roboto", sans-serif;
+}
+.Home {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -49,6 +51,7 @@ nav ul li a{
 }
 
 .hero-content {
+    height: 220px;
     text-align: center;
     color: white;
 }
@@ -58,6 +61,7 @@ nav ul li a{
     letter-spacing: 20px;
     font-weight: 200;
     opacity: 100%;
+    color: white;
 }
 
 .hero p {

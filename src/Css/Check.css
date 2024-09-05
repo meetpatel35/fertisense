@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 
-body {
+.check {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(172deg,rgb(61, 178, 35) 11%, rgba(0,36,16,1) 95%);
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(172deg,rgb(61, 178, 35) 11%, rgba(0,36,16,1) 95%);
 }
 
-.container {
+.container-check {
     padding: 20px;
     border-radius: 10px;
     width: 100vw;

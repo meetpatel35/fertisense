@@ -7,15 +7,15 @@
     overflow-y: auto;
 }
 
-body {
+.library {
     font-family: 'Roboto', sans-serif;
-    background:url('../assets/images/Image15.png')no-repeat; /* You can replace this with your background image later */
     color: #333;
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
 .main {
+    background:url('../assets/images/Image15.png')no-repeat; /* You can replace this with your background image later */
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
@@ -25,7 +25,7 @@ body {
     height: 100vh;
     padding-top: 1005px; /* Add padding to prevent overlap on the top */
 }
-.container {
+.container-lib {
     width: 80%;   /* Example width */
     max-width: 1200px; /* Maximum width */
     padding: 20px; /* Example padding */

@@ -4,10 +4,11 @@ import './Css/library.css'
 
 function Library() {
   return (
-    <>
-      <Navbar />
+    <div className='library'>
+      {/* <Navbar /> */}
+      
       <div className='main'>
-        <div class="container">
+        <div class="container-lib">
           <h1>We currently have data of these pH ranges for crops specified below:</h1>
           <div class="grid-container">
             <div class="grid-item">Wheat</div>
@@ -101,7 +102,7 @@ function Library() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
