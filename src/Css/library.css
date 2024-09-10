@@ -16,6 +16,7 @@
 }
 .main {
     background:url('../assets/images/Image15.png')no-repeat; /* You can replace this with your background image later */
+    overflow-y: hidden;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;

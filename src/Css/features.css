@@ -1,0 +1,72 @@
+/* Main container for the whole page */
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://img.freepik.com/free-vector/background-wave-green-abstract-with-gradient-modern-style_343694-3281.jpg?semt=ais_hybrid')no-repeat center/cover;
+    /* Green background */
+}
+
+/* The white box for the content */
+.features-box {
+    width: 700px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 14px 17px 10px rgba(0, 0, 0, 0.5);
+    /* Black box shadow */
+    border-radius: 14px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(30px);
+    /* Initial position offscreen */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Smooth transition */
+}
+
+.features-box.visible {
+    opacity: 1;
+    /* Make it visible */
+    transform: translateY(0);
+    /* Bring it back to original position */
+}
+
+/* Heading for the features */
+.features-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the list of features */
+.features-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.features-list li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(20px);
+    /* Initially shifted down */
+    animation: fadeInUp 0.5s ease forwards;
+    /* Trigger fadeInUp animation */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
