@@ -1,7 +1,7 @@
 // const { MongoClient } = require("mongodb");
 
 // // Replace the following with your Atlas connection string                                                                                                                                        
-// const url = "mongodb+srv://patelmeet0625:MeetPatel0603@cluster0.s08s0p7.mongodb.net/";
+// const url = "";
 
 // // Connect to your Atlas cluster
 // const client = new MongoClient(url);
