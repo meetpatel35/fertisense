@@ -4,11 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = 5000;
-// app.use(cors({
-//     origin: 'http://localhost:3000', // Allow requests from your frontend
-//     methods: ['GET', 'POST'],        // Specify the allowed methods
-//     credentials: true                // Allow cookies or authentication if needed
-// }));
+
 app.use(cors())
 app.use(express.json())
 // const axios = require('axios');
