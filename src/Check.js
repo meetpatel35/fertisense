@@ -7,10 +7,10 @@ function Check() {
     const [selectedCrop, setSelectedCrop] = useState('Select');
 
     const handleSelectChange = async (event) => {
-        const crop = event.target.value; // Get the updated selected crop
+        const cropName = event.target.value; // Get the updated selected crop
     
-        setSelectedCrop(crop);
-        console.log('Selected crop:', crop);
+        setSelectedCrop(cropName);
+        console.log('Selected crop:', cropName);
     
         try {
             const response = await fetch('http://localhost:5000/crop', {
@@ -18,8 +18,10 @@ function Check() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ "cropName": crop }), // Use the updated crop value directly
+                body: JSON.stringify({cropName}),
             });
+            const data = await response.json();
+            console.log(data.cropData)
     
         } catch (error) {
             console.error('Error sending data to backend:', error);
