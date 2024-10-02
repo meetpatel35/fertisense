@@ -7,9 +7,9 @@ const PORT = 5000;
 
 app.use(cors())
 app.use(express.json())
-// const axios = require('axios');
-let crop = " Please select a crop first"
 
+let crop = " Please select a crop first"
+let espdata ="";
 app.post('/crop', async (req, res) => {
 
     const { plantDataCollection } = await connectToMongo();
@@ -24,13 +24,19 @@ app.post('/crop', async (req, res) => {
             console.log({ message: `Crop data for ${crop} not found` });
             res.status(404).json({"message":"data not found"})
         }
-   
+
 });
 app.get('/crop', (req, res) => {
     res.send(`Crop selected: ${crop}`);
 });
 
-// Start the server
+app.post('/espdatareceive',(req,res)=>{
+    espdata = req.body;
+    console.log(espdata);
+})
+app.get('/espdatareceive',(req,res)=>{
+    res.status(200).send(espdata);
+})
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
