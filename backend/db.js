@@ -16,19 +16,20 @@
 const { MongoClient } = require('mongodb');
 require('dotenv').config(); // For storing MongoDB URI securely
 
-const uri = process.env.MONGO_URI; // Your MongoDB Atlas URI
-
+// const uri = process.env.MONGO_URI; // Your MongoDB Atlas URI
+const uri = "mongodb://localhost:27017/" 
 const client = new MongoClient(uri);
 
 const connectToMongo = async () => {
     try {
         await client.connect();
-        console.log('Connected to MongoDB Atlas');
+        console.log('Connected to MongoDB');
 
-        // Access the Fertisense database and plant_data collection
-        const db = client.db('Fertisense');
+        // Access the Fertisense database and plant_data collection ....ATLAS
+        // const db = client.db('Fertisense');
+        // const plantDataCollection = db.collection('plant_data');
+        const db = client.db('Plant_data_local');
         const plantDataCollection = db.collection('plant_data');
-
         return { db, plantDataCollection };
     } catch (error) {
         console.error('Error connecting to MongoDB:', error);
