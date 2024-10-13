@@ -42,6 +42,7 @@ nav ul li a{
 }
 
 .hero {
+    overflow-y: hidden;
     height: 100vh;
     background: url('../assets/images/Homepage.png') no-repeat center center/cover;
     display: flex;
@@ -51,7 +52,7 @@ nav ul li a{
 }
 
 .hero-content {
-    height: 220px;
+    height: 230px;
     text-align: center;
     color: white;
 }
@@ -68,20 +69,26 @@ nav ul li a{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
+    padding: 5px;
+    color: black;
+    background-color: rgba(245, 231, 231, 0.701);
+    border-radius: 12px;
 }
 
 .btn {
-    background-color: #FF8C00;
+    background-color: #2b9f0ec8;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
     font-size: 22px;
     font-weight: 500;
+    border: 1px solid black;
     border-radius: 10px;
 }
 .btn:hover{
-    background-color: #aa5e00;
-    transition: all 0.2s ease-in-out;
+    background-color: #12e92f3f;
+    transition: all 0.4s ease-in-out;
+    color: black;
 }
 
 .logoimg{
