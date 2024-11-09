@@ -23,16 +23,18 @@ const client = new MongoClient(uri);
 const connectToMongo = async () => {
     try {
         await client.connect();
-        console.log('Connected to MongoDB');
+        // console.log('Connected to MongoDB');
 
         // Access the Fertisense database and plant_data collection ....ATLAS
         // const db = client.db('Fertisense');
         // const plantDataCollection = db.collection('plant_data');
         const db = client.db('Plant_data_local');
+        const espdatadb = db.collection('espdata');
+        
         const plantDataCollection = db.collection('plant_data');
-        return { db, plantDataCollection };
+        return { db, plantDataCollection,espdatadb };
     } catch (error) {
-        console.error('Error connecting to MongoDB:', error);
+        // console.error('Error connecting to MongoDB:', error);
         throw error; // Throw error if unable to connect
     }
 };
